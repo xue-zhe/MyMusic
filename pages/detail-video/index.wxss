@@ -1,0 +1,12 @@
+/* pages/detail-video/index.wxss */
+page{
+ /* padding-top: 450rpx;*/
+}
+.video {
+  position: fi1xed;
+  width: 100%;
+  top: 0;
+}
+.related{
+  margin: 15rpx ;
+}

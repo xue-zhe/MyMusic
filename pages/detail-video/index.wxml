@@ -1,0 +1,20 @@
+<!--pages/detail-video/index.wxml-->
+<video class="video"
+       src="{{mvURLInfo.url}}"
+       danmu-list=""
+       referrer-policy = "origin"
+      
+       loop>
+</video>
+<view class="mvdetaile">
+  <view  wx:for="{{mvdetaile}}" wx:key="id">
+    <view >{{mvdetaile.artistName}}</view>
+  </view> 
+</view>
+<view class="related"
+      wx:for="{{relatedVideos}}" wx:key="id">
+  <video-item-v2 item = "{{item}}"
+                 data-item = "{{item}}"
+                 bindtap="handleVideoItemClick">
+  </video-item-v2>
+</view>

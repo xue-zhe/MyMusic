@@ -1,13 +1,47 @@
 {
-    "pages": [
-        "pages/index/index"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#DC143C",
-        "navigationBarTitleText": "MyMusic",
-        "navigationBarTextStyle": "black"
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/home-music/index",
+    "pages/home-video/index",
+    "components/video-item-v1/index",
+    "pages/detail-video/index",
+    "components/video-item-v2/index",
+    "components/area-header/index",
+    "components/song-item-v1/index",
+    "components/song-menu-area/index",
+    "components/song-menu-item/index",
+    "components/ranking-area-item/index",
+    "pages/detail-search/index",
+    "pages/detail-songs/index",
+    "components/song-item-v2/index",
+    "pages/music-player/index",
+    "baseui/nav-bar/index"
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DC143C",
+    "navigationBarTitleText": "MyMusic",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/home-music/index",
+        "text": "音乐",
+        "iconPath": "assets/images/tabbar/music_normal.png",
+        "selectedIconPath": "assets/images/tabbar/music_active.png"
+      },
+      {
+        "pagePath": "pages/home-video/index",
+        "text": "视频",
+        "iconPath": "assets/images/tabbar/video_normal.png",
+        "selectedIconPath": "assets/images/tabbar/video_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

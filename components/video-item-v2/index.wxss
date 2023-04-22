@@ -1,0 +1,78 @@
+/* components/video-item-v2/index.wxss */
+.item {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.album {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.album .image {
+  width: 45%;
+  border-radius: 12rpx;
+}
+
+.album .duration {
+  position: absolute;
+  top: 150rpx;
+  left: 250rpx;
+  font-size: 22rpx;
+  color:#fff;
+}
+.album .info {
+  width: 53%;
+  margin-left: 15rpx;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  bottom: 8rpx;
+  justify-content: space-between;
+  color: #140101;
+  font-size: 24rpx;
+}
+.info .title {
+  padding-bottom: 8rpx;
+  margin-bottom: 15rpx;
+}
+.info .username{
+  position: absolute;
+  bottom: 45rpx;
+  color: rgba(146, 147, 148, 0.568);
+}
+
+.info .title::before {
+  content: "";
+  position: absolute;
+  left: -2rpx;
+  top: 4rpx;
+  width: 30rpx;
+  height: 24rpx;
+  background-size: cover;
+}
+
+.title {
+  margin-top: 3rpx;
+  font-size: 25rpx;
+  /* 显示两行 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-line-clamp: 2;
+  -moz-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.info .count{
+  position: absolute;
+  top: 150rpx;
+  color: rgba(146, 147, 148, 0.568);
+}
+
+
